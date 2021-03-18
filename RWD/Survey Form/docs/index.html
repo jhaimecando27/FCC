@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fraunces&family=Lato&family=Raleway:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	
+	<body>
+		<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+		
+		<div class="container">
+			<h1 id="title" class="title-form">Are You a Programmer?</h1>
+			<p id="description" class="details">A survey about the health habit of programmers</p>
+			
+			<form id="survey-form" class="survey-container">
+				<div class="name-container form-container">
+					<label 
+						for="name" 
+						id="name-label" 
+						class="label"
+					>Name
+					</label>
+					<input 
+						type="text" 
+						name="name" 
+						id="name"
+						placeholder="Enter your name here"
+						required
+					>
+				</div> <!-- .name-container -->
+				
+				<div class="email-container form-container">
+					<label 
+						for="email" 
+						id="email-label" 
+						class="label"
+					>Email
+					</label>
+					<input 
+						type="email" 
+						name="email"
+						id="email" 
+						placeholder="Enter your email"
+						required
+					>
+				</div> <!-- .email-container -->
+				
+				<div class="number-container form-container">
+					<label 
+						for="number" 
+						id="number-label" 
+						class="label"
+					>Years of experience
+					</label>
+					<input 
+						type="number" 
+						name="number" 
+						min="1" 
+						max="99" 
+						id="number"
+						placeholder="Years of experience"
+						required
+					>
+				</div> <!-- .number-container -->
+				
+				
+				<div class="work-container  form-container">
+					<label for="work" class="label">When do you normaly start your actual work?</label>
+					<select 
+						id="dropdown" 
+						name="work" 
+						placeholder="Choose here"
+					>
+						<option value disabled selected>Choose here</option>
+						<option value="Before the schedule">Before the schedule</option>
+						<option value="In  scheduled time">In  scheduled time</option>
+						<option value="Couple of minutes after the schedule">Couple of minutes after the schedule</option>
+						<option value="Couple of hours after the schedule">Couple of hours after the schedule</option>
+					</select>
+				</div> <!-- .work-container -->
+				
+				<div class="sleep-container form-container">
+					<p class="label">When do you start sleeping?</p>
+					<label class="sleep-name">
+						<input 
+							type="radio" 
+							name="sleep" 
+							value="Less than 10pm"
+						>Less than 10pm
+					</label>
+					<label class="sleep-name">
+						<input 
+							type="radio" 
+							name="sleep" 
+							value="10pm - 12am"
+						>10pm - 12am
+					</label>
+					<label class="sleep-name">
+						<input 
+							type="radio" 
+							name="sleep" 
+							value="12am - 1am"
+						>12am - 1am
+					</label>
+					<label class="sleep-name">
+						<input 
+							type="radio" 
+							name="sleep" 
+							value="Greater than 1am"
+						>Greater than 1am
+					</label>
+					<label class="sleep-name">
+						<input 
+							type="radio" 
+							name="sleep" 
+							value="Less than 10pm"
+						>Couple of hours before the work
+					</label>
+				</div> <!-- .sleep-container -->
+				
+				<div class="food-container form-container">
+					<p class="label">What do you actually eat?</p>
+					<label class="food-name">
+						<input
+							type="checkbox"
+							name="food"
+							value="Vegetables"
+						>Vegetables
+					</label>
+					<label class="food-name">
+						<input
+							type="checkbox"
+							name="food"
+							value="Fruits"
+						>Fruits
+					</label>
+					<label class="food-name">
+						<input
+							type="checkbox"
+							name="food"
+							value="Meats"
+						>Meats
+					</label>
+					<label class="food-name">
+						<input
+							type="checkbox"
+							name="food"
+							value="Junk foods"
+						>Junk foods
+					</label>
+					<label class="food-name">
+						<input
+							type="checkbox"
+							name="food"
+							value="Processed food"
+						>Junk foods
+					</label>
+				</div> <!-- .food-container -->
+				
+				<div class="text-area form-container">
+					<label for="reason" class="label">Reason why this is your health habit</label>
+					<textarea 
+						class="reason"
+						name="reason"
+						placeholder="Enter your reason here..."
+					></textarea>
+				</div> <!-- .text-area -->
+				
+				<input type="submit" value="Submit" id="submit">
+			</form>
+		</div> <!-- .container -->
+	</body>
+</html>

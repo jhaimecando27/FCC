@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta 
+		name="keywords" 
+		content="Free Code Camp Build a Landing Page, FCC: Product Page">
+	<meta
+		name="description"
+		content="A responsive website for Free Code Camp projects">
+	<title>FCC: Product Page</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Noto+Sans+KR:wght@300;400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/1ce2099626.js" crossorigin="anonymous"></script>
+
+	<link 
+		rel="stylesheet" 
+		type="text/css" 
+		href="style.css"
+		/>
+</head>
+<body>
+	<div class="container">
+		<header id="header">
+			<img 
+				src="https://payload.cargocollective.com/1/4/153565/2769774/iron%20chopsticks%20logo.jpg" 
+				alt="Iron Chopsticks Logo"
+				id="header-img"
+				>
+			<nav id="nav-bar">
+				<ul>
+					<li>
+						<a href="#product" class="nav-link">Product</a><span>|</span>
+					</li>
+					<li>
+						<a href="#features" class="nav-link">Features</a><span>|</span>
+					</li>
+					<li>
+						<a href="#pricing" class="nav-link">Pricing</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		
+		<section class="section-1">
+			<div id="product">
+				<p><span>iron chopsticks</span> is lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac eros est. Integer ante nisi, bibendum non neque id, blandit blandit tellus. Nulla nec vehicula libero.</p>
+			</div>
+			<iframe 
+				width="560" 
+				height="315" 
+				src="https://www.youtube.com/embed/2Bns2m5Bg4M" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+				allowfullscreen
+				id="video"
+				>
+			</iframe>
+		</section>
+
+		<div class="section-container">
+			<section class="section" id="features">
+				<!-- flexbox -->
+				<h1 class="features-label">features</h1>
+				<div class="features-list">
+					<div class="durable">
+						<i class="fas fa-gem"></i>
+						<h2>durable</h2>
+						<p>Iron Chopsticks is very durable even Superman can't break it</p>
+					</div> <!-- .durable -->
+					<div class="affordable">
+						<i class="fas fa-dollar-sign"></i>
+						<h2>affordable</h2>
+						<p>Even it's made from high quality of material, it's still affordable</p>
+					</div> <!-- affordable -->
+					<div class="costumizable">
+						<i class="fas fa-pencil-ruler"></i>
+						<h2>costumizable</h2>
+						<p>Your chopstick, your style</p>
+					</div> <!-- costumizable -->
+				</div> <!-- .features-list -->
+			</section>
+			<section class="section" id="pricing">
+				<!-- flexbox -->
+				<h1 class="pricing-label">pricing</h1>
+				<div class="pricing-list">
+					<div class="1dollar">
+						<h2>$1</h2>
+						<p>1 pair of chopstick with 1 color of choice.</p>
+					</div> <!-- .1dollar -->
+					<div class="4dollar">
+						<h2>$4</h2>
+						<p>1 pair of chopstick with 3 color of choice</p>
+					</div> <!-- 4dollar -->
+					<div class="6dollar">
+						<h2>$6</h2>
+						<p>1 pair of chopstick with unlimited colors of choice</p>
+					</div> <!-- 6dollar -->
+				</div> <!-- .pricing-list -->
+			</section>
+		</div> <!-- .section-container -->
+
+		<form action="https://www.freecodecamp.com/email-submit" id="form">
+			<label for="email">Be updated with our product</label>
+			<input 
+				type="email" 
+				name="email"
+				placeholder="Enter your email here"
+				id="email"
+				required
+				/>
+			<input type="submit" id="submit">
+		</form>
+		
+	</div> <!-- .container -->
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

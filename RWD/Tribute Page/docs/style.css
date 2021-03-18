@@ -1,0 +1,197 @@
+/* Base
+	================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  background-image: linear-gradient(black, black, black, #111625, #341931, #571B3C);
+  color: white;
+  padding: 0;
+}
+
+/* Main
+	================================================================== */
+
+/* main */
+#main{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#title, #title-info {
+  margin: 0;
+}
+
+/* title */
+#title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 18rem;
+  text-transform: capitalize;
+}
+
+#title-info {
+  font-family: 'Lato', sans-serif;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+/* img-div */
+#img-div {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+ /* image */
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* img-caption */
+#img-caption {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+
+/* h2 */
+h2 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 8rem;
+  margin: 100px 0 0 0;
+  text-transform: capitalize;
+}
+
+#details {
+  line-height: 1.6;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin: 20px 50px 0 50px;
+  text-align: justify;
+}
+
+/* awards list */
+ul {
+  margin: 0 70px;
+}
+
+li {
+  line-height: 200%;
+  font-family: 'Xanh Mono', monospace;
+  font-size: 3rem;
+}
+
+span {
+  font-family: 'Potta One', cursive;
+  color: #9D2053;
+}
+
+h4 {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 4rem;
+  margin-top: 200px;
+  text-align: center;
+}
+
+#tribute-link{
+  text-decoration: none;
+  color: #111625;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+  color: #9D2053;
+  transition: 0.8s;
+  transition-timing-function: ease-out;
+}
+
+
+@media (max-width: 460px){
+  #title {
+    font-size: 8rem;
+  }
+
+  #title-info {
+    font-size: 3rem;
+  }
+
+  #img-caption {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  #details {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 2em;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  li {
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px){
+  #title {
+    font-size: 9rem;
+    text-align: center;
+  }
+
+  #title-info {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #img-caption {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 5rem;
+  }
+
+  #details {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 2em;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  li {
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+}

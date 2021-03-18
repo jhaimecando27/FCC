@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>FCC: Documentation Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<nav id="navbar">
+		<header>CSS Animation Documentation</header>
+		<ul>
+			<li><a href="#Introduction" class="nav-link">Introduction</a></li>
+			<li><a href="#The_@keyframes_rule" class="nav-link">The @keyframes rule</a></li>
+			<li><a href="#animation-name" class="nav-link">animation-name</a></li>
+			<li><a href="#animation-duration" class="nav-link">animation-duration</a></li>
+			<li><a href="#animation-timing-function" class="nav-link">animation-timing-function</a></li>
+			<li><a href="#animation-delay" class="nav-link">animation-delay</a></li>
+			<li><a href="#animation-iteration-count" class="nav-link">animation-iteration-count</a></li>
+			<li><a href="#animation-direction" class="nav-link">animation-direction</a></li>
+			<li><a href="#animation-fill-mode" class="nav-link">animation-fill-mode</a></li>
+			<li><a href="#animation-play-state" class="nav-link">animation-play-state</a></li>
+			<li><a href="#Reference" class="nav-link">Reference</a></li>
+		</ul>
+	</nav>
+
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header>Introduction</header>
+			<p>
+				CSS Animation allows animation in HTML without the use of JS (Java Script). Animation consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation’s style, as well as possible intermediate waypoints.
+			</p>
+			<p>
+				There are three key advantages to CSS animations over traditional script-driven animation techniques:
+			</p>
+			<ol>
+				<li>They’re easy to use for simple animations; you can create them without even having to know JavaScript.</li>
+				<li>The animations run well, even under moderate system load. Simple animations can often perform poorly in JavaScript. The rendering engine can use frame-skipping and other techniques to keep the performance as smooth as possible.</li>
+				<li>Letting the browser control the animation sequence lets the browser optimize performance and efficiency by, for example, reducing the update frequency of animations running in tabs that aren't currently visible.</li>
+			</ol>
+		</section>
+
+		<section class="main-section" id="The_@keyframes_rule">
+			<header>The @keyframes rule</header>
+			<p>When you specify CSS styles inside the <code>@keyframes</code> rule, the animation will gradually change from the current style to the new style at certain times.</p>
+			<p>To get an animation to work, you must bind the animation to an element.</p>
+		</section>
+
+		<section class="main-section" id="animation-name">
+			<header>animation-name</header>
+			<p>Specifies the name of the @keyframes at-rule describing the animation’s keyframes.</p>
+		</section>
+
+		<section class="main-section" id="animation-duration">
+			<header>animation-duration</header>
+			<p>Configures the length of time that an animation should take to complete one cycle by percent.</p>
+		</section>
+
+		<section class="main-section" id="animation-timing-function">
+			<header>animation-timing-function</header>
+			<p>Configures the timing of the animation; that is, how the animation transitions through keyframes, by establishing acceleration curves</p>
+			<p>The animation-timing-function property can have the following values:</p>
+			<dl>
+				<dt><code>ease</code></dt>
+				<dd>Specifies an animation with a slow start, then fast, then end slowly (this is default).</dd>
+				<dt><code>linear</code></dt>
+				<dd>Specifies an animation with the same speed from start to end.</dd>
+				<dt><code>ease-in</code></dt>
+				<dd>Specifies an animation with a slow start.</dd>
+				<dt><code>ease-out</code></dt>
+				<dd>Specifies an animation with a slow end.</dd>
+				<dt><code>ease-in-out</code></dt>
+				<dd>Specifies an animation with a slow start and end.</dd>
+				<dt><code>cubic-bezier(n,n,n,n)</code></dt>
+				<dd>Lets you define your own values in a cubic-bezier function.</dd>
+			</dl>
+		</section>
+
+		<section class="main-section" id="animation-delay">
+			<header>animation-delay</header>
+			<p>Configures the delay between the time the element is loaded and the beginning of the animation sequence.</p>
+		</section>
+
+		<section class="main-section" id="animation-iteration-count">
+			<header>animation-iteration-count</header>
+			<p>Configures the number of times the animation should repeat; you can specify <code>infinite</code> to repeat the animation indefinitely.</p>
+		</section>
+
+		<section class="main-section" id="animation-direction">
+			<header>animation-direction</header>
+			<p>Configures whether or not the animation should alternate direction on each run through the sequence or reset to the start point and repeat itself.</p>
+			<p>The animation-direction property can have the following values:</p>
+			<ul>
+				<li><code>normal</code>
+					<ul>
+						<li>The animation is played as normal (forwards).</li>
+					</ul>
+				</li>
+				<li><code>reverse</code>
+					<ul>
+						<li>The animation is played in reverse directio</li>
+					</ul>
+				</li>
+				<li><code>alternate</code>
+					<ul>
+						<li>The animation is played forwards first, then backwards</li>
+					</ul>
+				</li>
+				<li><code>alternate-reverse</code>
+					<ul>
+						<li>The animation is played backwards first, then forwards</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section class="main-section" id="animation-fill-mode">
+			<header>animation-fill-mode</header>
+			<p>Configures what values are applied by the animation before and after it is executing.</p>
+			<p>The animation-fill-mode property can have the following values:</p>
+			<dl>
+				<dt><code>none</code></dt>
+				<dd>Default value. Animation will not appy any styles to the element before or after it is executing.</dd>
+				<dt><code>forwards</code></dt>
+				<dd>The element will retain the style values that is set by the last keyframe (depends on <code>animation-direction and animation-iteration-count</code>) and retain this during the animation-delay period.</dd>
+				<dt><code>backwards</code></dt>
+				<dd>The element will get the style values that is set by the first keyframe (depends on <code>animation-direction</code>), and retain this during the <code>animation-delay</code> period.</dd>
+				<dt><code>both</code></dt>
+				<dd>The animation will follow the rules for both forwards and backwards, extendingthe animatin properties in both direction.</dd>
+			</dl>
+		</section>
+
+		<section class="main-section" id="animation-play-state">
+			<header>animation-play-state</header>
+			<p>Lets you pause and resume the animation sequence.</p>
+		</section>
+
+		<section class="main-section" id="Reference">
+			<header>Reference</header>
+			<ul>
+				<li>All the documentation in this page are taken from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="_blank">MDN</a> and <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">w3schools</a></li>
+				<li>For more information visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/" target="_blank">MDN</a> and <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">w3schools</a></li>
+			</ul>
+		</section>
+	</main>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
